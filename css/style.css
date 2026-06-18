@@ -1,0 +1,59 @@
+/*Constantes*/
+:root {
+    --color--primario: #3b559c;
+    --color--segundario: #fe42f9;
+    --color--segundario-oscuro: #8A51CD;
+    --textura: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 1 0 1 0 0 1 0 0 1 0 1 0 0 0 0.1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+/* Globales*/
+body{
+    /*Tipografia*/
+    font-variation-settings:"wdth" 100;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+    /*Cuerpo*/
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*navbar*/
+.navbar{
+    display: flex;
+    background: 
+        var(--textura),
+        linear-gradient(90deg,
+            var(--color--segundario-oscuro) 0%,
+            var(--color--primario) 45%,
+            var(--color--primario) 55%,
+            var(--color--segundario-oscuro) 100%
+        );
+    justify-content: space-between;
+    border-bottom: 0px solid black;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.186);
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-list{
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    font-weight: 12px;
+    font-size: 30px;
+    color: white;
+}
+
+.WhatsApp-icon{
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+}
