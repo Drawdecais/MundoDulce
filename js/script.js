@@ -1,9 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const navbar = document.getElementById('navbar-container');
+document.addEventListener("DOMContentLoaded", (x => {
+    const navbar = document.getElementById('navbar')
+    const footer = document.getElementById('footer')
+
+    if (navbar){
+        fetch("components/navbar.html")
+            .then(r => r.text())
+            .then(nav => {navbar.innerHTML = nav})
+    }
     
-    fetch('components/navbar.html')
-        .then(response => response.text())
-        .then(html => {
-            navbar.innerHTML = html;
-        });
-});
+    if(footer){
+        fetch("components/footer.html")
+            .then(r => r.text())
+            .then(ft => {footer.innerHTML = ft})
+    }
+}))
