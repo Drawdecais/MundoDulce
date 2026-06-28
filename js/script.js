@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", (x => {
-    const navbar = document.getElementById('navbar')
+    const header = document.getElementById('header')
     const footer = document.getElementById('footer')
 
-    if (navbar){
+    if (header){
         fetch("components/navbar.html")
             .then(r => r.text())
-            .then(nav => {navbar.innerHTML = nav})
+            .then(nav => {header.innerHTML = nav})
     }
     
     if(footer){
