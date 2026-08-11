@@ -150,11 +150,18 @@
     display: flex;
     margin: 1rem;
 }
-
+@media (max-width: 1260px) {
+    .ubications-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 2rem;
+    }
+}
 .ubication-image{
     position: relative;
-    width: 240px;
-    height: 230px;
+    width: 280px;
+    height: 280px;
 }
 .ubication-image img{
     width: 100%;
@@ -169,6 +176,12 @@
     border-radius: 60px;
     padding: 2px 0;
     bottom:0;
+}
+.ubication-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
 }
 .ubication-content p{
     margin:0;
@@ -186,17 +199,11 @@
 }
 .ico-line{
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
-.ico-line img{
-    max-height: 30px;
-}
-.ico-line p{
-    margin-left: 5px;
-}
-.ico-line a{
-    color: black;
-}
+.ico-line img{max-height: 30px;}
+.ico-line p{margin-left: 5px;}
+.ico-line a{color: black;}
 
 .text-weekend{
     text-align: center;

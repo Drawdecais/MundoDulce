@@ -26,7 +26,7 @@ body{
     font-style: normal;
     /*Cuerpo*/
     background-color: var(--background-color);
-    max-width: 1200px;
+    max-width: 1440px;
     margin: auto;
 }
 @font-face {
@@ -51,7 +51,7 @@ span{
     border-radius: 20px;
     align-items: center;
     padding: 1rem;
-    max-width: 240px;
+    max-width: 280px;
 }
 
 .btn{
