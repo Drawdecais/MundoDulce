@@ -150,17 +150,10 @@
     display: flex;
     margin: 1rem;
 }
-@media (max-width: 1260px) {
-    .ubications-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        gap: 2rem;
-    }
-}
+
 .ubication-image{
     position: relative;
-    width: 280px;
+    width: 100%;
     height: 280px;
 }
 .ubication-image img{
@@ -208,6 +201,32 @@
 .text-weekend{
     text-align: center;
     font-size: 30px;
+}
+
+/*Ubicaciomes responsive*/
+@media (max-width: 1260px) {
+    .ubications-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 2rem;
+    }
+    .cart{max-width: 400px;}
+    .ico-line img{max-height: 40px;}
+    .btn{
+        min-height: 60px;
+    }
+    .ubication-image a{
+        font-size: 25px;
+    }
+    .ico-line p{
+        font-size: 20px;
+    }
+}
+@media (max-width: 640px) {
+    .ubications-container {
+        grid-template-columns: 1fr;
+    }
 }
 /*sidebar*/
 .sidebar-container{
